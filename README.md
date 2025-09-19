@@ -72,6 +72,7 @@ frontend/
 │   └── styles.css   # Styling
 ├── package.json
 └── ...
+```
 
 ---
 
@@ -84,6 +85,7 @@ cd frontend
 npm install
 npm start
 Open: http://localhost:3000
+```
 
 💾 Persistence Details
 
