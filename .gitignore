@@ -1,0 +1,45 @@
+# Node.js (Backend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+dist/
+build/
+tmp/
+temp/
+
+# React (Frontend)
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.*
+
+# Optional: OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor-specific
+.vscode/
+
+# Logs
+logs
+*.log
+*.tsbuildinfo
+
+# Test/coverage
+coverage/
+
+# Miscellaneous
+*.pid
+*.seed
+*.orig
+*.bak
+*.swp
+*.swo
+out/
+bin/
+obj/

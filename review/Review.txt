@@ -1,0 +1,2 @@
+Free object website from which I download free 3D ojb objects for this project is https://free3d.com/.
+I am putting download 2 3d objects in frontends/assets/objects. You can use them when running your project.

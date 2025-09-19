@@ -1,0 +1,130 @@
+/* src/App.css */
+:root {
+  --bg: #111;
+  --panel: #151515;
+  --accent: #08f;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #eee;
+  font-family: Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+  gap: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  overflow: auto;
+}
+h1 {
+  font-size: 16px;
+  margin: 4px 0 12px;
+}
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 13px;
+  color: #bbb;
+}
+input[type="file"] {
+  width: 100%;
+}
+button {
+  background: transparent;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+button.primary {
+  border-color: var(--accent);
+  box-shadow: 0 0 14px rgba(8, 136, 255, 0.06);
+}
+#drop {
+  border: 2px dashed #222;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  color: #999;
+  margin: 8px 0;
+}
+#canvas-wrap {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #222;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.states {
+  margin-top: 8px;
+}
+.state-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  margin-bottom: 6px;
+}
+.small {
+  font-size: 12px;
+  color: #bbb;
+}
+.controls-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 8px;
+}
+.toggle {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.msg {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 8px;
+}
+footer {
+  font-size: 12px;
+  color: #777;
+  margin-top: 12px;
+}
+@media (max-width: 880px) {
+  #app {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .panel {
+    order: 2;
+  }
+}
